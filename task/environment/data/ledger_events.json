@@ -1,0 +1,26 @@
+{
+  "valid_timestamp_cutoff": 1000,
+  "system_revision_cutoff": 100,
+  "events": [
+    {
+      "event_id": "p1",
+      "type": "payment",
+      "parent_event_id": null,
+      "payer_id": "u1",
+      "amount": 100.0,
+      "participants": ["u1", "u2"],
+      "valid_timestamp": 100,
+      "system_revision": 10
+    },
+    {
+      "event_id": "p2",
+      "type": "payment",
+      "parent_event_id": "p1",
+      "payer_id": "u2",
+      "amount": 60.0,
+      "participants": ["u1", "u2", "u3"],
+      "valid_timestamp": 200,
+      "system_revision": 20
+    }
+  ]
+}
