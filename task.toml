@@ -1,0 +1,12 @@
+[task]
+id = "bitemporal-expense-ledger"
+name = "Bitemporal Expense Ledger State Machine"
+version = "1.0.0"
+description = "Implement a state machine to resolve out-of-order bitemporal expense ledger events into net balances."
+
+[environment]
+dockerfile = "environment/Dockerfile"
+
+[verifier]
+timeout = 300
+script = "tests/test.sh"
